@@ -1,2 +1,10 @@
-# FINAL-YEAR-PROJECT
-Cybersecurity project
+# Secure Health: A Zero Trust Approach
+Problem Addressed
+
+The rapid digitization of the healthcare industry has introduced significant cybersecurity vulnerabilities.Traditional, perimeter-based security models are no longer effective against modern threats such as Remote Access Trojans (RATs) and insider attacks, which expose sensitive Protected Health Information (PHI) and compromise patient safety and privacy.
+
+This project proposes a robust security framework to overcome these risks by combining Zero Trust Architecture (ZTA) with Endpoint Detection and Response (EDR). Built on the principle of "Never trust, always verify," the framework assumes no entity is inherently trustworthy and requires continuous verification. By using techniques like microsegmentation to compartmentalize the network and contain threats, alongside the continuous monitoring and real-time detection capabilities of EDR, the goal is to create a multilayered defense that provides a secure blueprint for modern healthcare networks.
+
+Literature Review
+
+The literature review explores existing research on Zero Trust Architecture (ZTA) and Endpoint Detection and Response (EDR) to establish a foundation for the project. The reviewed literature shows a strong trend toward using machine learning (e.g., Random Forest, SVM, Deep Learning) to enhance EDR for advanced threat detection. Several papers propose ZTA frameworks specifically for healthcare, focusing on critical success factors like identity, endpoints, data, and networks, and introducing techniques like micro-segmentation, Identity and Access Management (IAM), and Multi-Factor Authentication (MFA) to secure patient data. These studies demonstrate that ZTA can significantly reduce attack surfaces, limit the lateral movement of attackers, and help meet compliance requirements like HIPAA.However, a recurring limitation identified across the research is that most proposed frameworks are conceptual and lack validation in real-world healthcare settings. Critical practical challenges such as implementation costs, performance latency on life-critical systems, policy management complexity, and usability—are often unaddressed. This gap presents an opportunity to adapt and validate a combined ZTA and EDR model specifically for the unique, high-stakes healthcare environment
