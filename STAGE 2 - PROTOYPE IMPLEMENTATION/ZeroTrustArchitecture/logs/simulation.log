@@ -1,0 +1,387 @@
+2025-09-28T21:19:31.066744+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T21:19:31.067342+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T21:19:35.167184+0530 | ERROR | Authentication error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/auth/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DCBE6BA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-09-28T21:19:35.168633+0530 | ERROR | Simulation error: Failed to authenticate as admin
+2025-09-28T21:19:35.176987+0530 | INFO | Simulation stopped
+2025-09-28T21:22:18.723649+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T21:22:18.724183+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T21:22:20.962579+0530 | INFO | Admin authentication successful
+2025-09-28T21:22:20.967776+0530 | INFO | Generated 30 realistic users
+2025-09-28T21:22:20.969396+0530 | INFO | Generated 73 realistic devices
+2025-09-28T21:22:20.969850+0530 | INFO | Created 5 security scenarios
+2025-09-28T21:22:30.549134+0530 | INFO | Registered 30/30 users
+2025-09-28T21:22:31.153190+0530 | ERROR | Error registering device HOSP-PC-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:22:35.342523+0530 | ERROR | Error registering device HOSP-LAP-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:22:44.744385+0530 | WARNING | Failed to register device INFRA-FIREWALL-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:44.892957+0530 | WARNING | Failed to register device INFRA-CORESWITCH-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:45.047469+0530 | WARNING | Failed to register device INFRA-WIFICONTROLLER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:45.188729+0530 | WARNING | Failed to register device INFRA-DHCPSERVER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:45.328981+0530 | WARNING | Failed to register device INFRA-DNSSERVER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:45.449955+0530 | WARNING | Failed to register device INFRA-DOMAINCONTROLLER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:22:45.557694+0530 | INFO | Registered 65/73 devices
+2025-09-28T21:22:45.562463+0530 | INFO | Continuous telemetry started
+2025-09-28T21:22:45.564509+0530 | INFO | ✅ Full simulation environment initialized and running
+2025-09-28T21:22:45.578017+0530 | INFO | Starting security scenario: Ransomware Attack Simulation
+2025-09-28T21:22:45.591341+0530 | ERROR | Failed to create security event: {'detail': 'Not Found'}
+2025-09-28T21:22:47.602008+0530 | WARNING | Telemetry failed for HOSP-PC-001: 404
+2025-09-28T21:22:52.714720+0530 | WARNING | Telemetry failed for HOSP-PC-002: 404
+2025-09-28T21:22:57.810245+0530 | WARNING | Telemetry failed for HOSP-PC-003: 404
+2025-09-28T21:23:02.909281+0530 | WARNING | Telemetry failed for HOSP-PC-004: 404
+2025-09-28T21:23:07.998187+0530 | WARNING | Telemetry failed for HOSP-PC-005: 404
+2025-09-28T21:23:13.068734+0530 | WARNING | Telemetry failed for HOSP-PC-006: 404
+2025-09-28T21:23:18.139306+0530 | WARNING | Telemetry failed for HOSP-PC-007: 404
+2025-09-28T21:23:23.213353+0530 | WARNING | Telemetry failed for HOSP-PC-008: 404
+2025-09-28T21:23:28.284739+0530 | WARNING | Telemetry failed for HOSP-PC-009: 404
+2025-09-28T21:23:33.354376+0530 | WARNING | Telemetry failed for HOSP-PC-010: 404
+2025-09-28T21:23:38.457445+0530 | WARNING | Telemetry failed for HOSP-PC-011: 404
+2025-09-28T21:23:43.542998+0530 | WARNING | Telemetry failed for HOSP-PC-012: 404
+2025-09-28T21:23:48.634778+0530 | WARNING | Telemetry failed for HOSP-PC-013: 404
+2025-09-28T21:23:53.728257+0530 | WARNING | Telemetry failed for HOSP-PC-014: 404
+2025-09-28T21:23:58.838629+0530 | WARNING | Telemetry failed for HOSP-PC-015: 404
+2025-09-28T21:24:02.628334+0530 | ERROR | Failed to create security event: {'detail': 'Not Found'}
+2025-09-28T21:24:03.907239+0530 | WARNING | Telemetry failed for HOSP-LAP-001: 404
+2025-09-28T21:24:09.004760+0530 | WARNING | Telemetry failed for HOSP-LAP-002: 404
+2025-09-28T21:24:14.066624+0530 | WARNING | Telemetry failed for HOSP-LAP-003: 404
+2025-09-28T21:24:19.155966+0530 | WARNING | Telemetry failed for HOSP-LAP-004: 404
+2025-09-28T21:24:24.265385+0530 | WARNING | Telemetry failed for HOSP-LAP-005: 404
+2025-09-28T21:24:29.337882+0530 | WARNING | Telemetry failed for HOSP-LAP-006: 404
+2025-09-28T21:24:34.444083+0530 | WARNING | Telemetry failed for HOSP-LAP-007: 404
+2025-09-28T21:24:39.521596+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-001: 404
+2025-09-28T21:24:44.598263+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-002: 404
+2025-09-28T21:24:49.685629+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-003: 404
+2025-09-28T21:24:54.747238+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-004: 404
+2025-09-28T21:24:59.836711+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-005: 404
+2025-09-28T21:25:04.908539+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-001: 404
+2025-09-28T21:25:06.631223+0530 | INFO | Security scenario completed: Ransomware Attack Simulation
+2025-09-28T21:25:10.007039+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-002: 404
+2025-09-28T21:25:15.111632+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-001: 404
+2025-09-28T21:25:20.186271+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-002: 404
+2025-09-28T21:25:25.281074+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-003: 404
+2025-09-28T21:25:30.371867+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-004: 404
+2025-09-28T21:25:35.459019+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-005: 404
+2025-09-28T21:25:40.536526+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-006: 404
+2025-09-28T21:25:45.595452+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-001: 404
+2025-09-28T21:25:50.685647+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-002: 404
+2025-09-28T21:25:55.793117+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-003: 404
+2025-09-28T21:26:00.877085+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-004: 404
+2025-09-28T21:26:05.956557+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-005: 404
+2025-09-28T21:26:11.038343+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-006: 404
+2025-09-28T21:26:16.139923+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-007: 404
+2025-09-28T21:26:21.199743+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-001: 404
+2025-09-28T21:26:26.280046+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-002: 404
+2025-09-28T21:26:31.368999+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-003: 404
+2025-09-28T21:26:36.484701+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-004: 404
+2025-09-28T21:26:41.560488+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-005: 404
+2025-09-28T21:26:46.650262+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-006: 404
+2025-09-28T21:26:51.740694+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-007: 404
+2025-09-28T21:26:56.829570+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-008: 404
+2025-09-28T21:27:01.915065+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-001: 404
+2025-09-28T21:27:06.998764+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-002: 404
+2025-09-28T21:27:12.061528+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-003: 404
+2025-09-28T21:27:17.139067+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-004: 404
+2025-09-28T21:27:22.221574+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-005: 404
+2025-09-28T21:27:27.299034+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-006: 404
+2025-09-28T21:27:32.407511+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-007: 404
+2025-09-28T21:27:37.479023+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-008: 404
+2025-09-28T21:27:42.557482+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-001: 404
+2025-09-28T21:27:47.676803+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-002: 404
+2025-09-28T21:27:52.795603+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-003: 404
+2025-09-28T21:27:57.891893+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-004: 404
+2025-09-28T21:28:02.994986+0530 | WARNING | Telemetry failed for IOT-BLOODANALYZER-001: 404
+2025-09-28T21:28:08.094592+0530 | WARNING | Telemetry failed for IOT-BLOODANALYZER-002: 404
+2025-09-28T21:28:13.179031+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-001: 404
+2025-09-28T21:28:18.259675+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-002: 404
+2025-09-28T21:28:23.347055+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-003: 404
+2025-09-28T21:28:28.407054+0530 | WARNING | Telemetry failed for INFRA-FIREWALL-001: 404
+2025-09-28T21:28:33.492414+0530 | WARNING | Telemetry failed for INFRA-CORESWITCH-001: 404
+2025-09-28T21:28:38.563985+0530 | WARNING | Telemetry failed for INFRA-WIFICONTROLLER-001: 404
+2025-09-28T21:28:43.638633+0530 | WARNING | Telemetry failed for INFRA-DHCPSERVER-001: 404
+2025-09-28T21:28:48.771039+0530 | WARNING | Telemetry failed for INFRA-DNSSERVER-001: 404
+2025-09-28T21:28:53.841947+0530 | WARNING | Telemetry failed for INFRA-DOMAINCONTROLLER-001: 404
+2025-09-28T21:29:28.943091+0530 | WARNING | Telemetry failed for HOSP-PC-001: 404
+2025-09-28T21:29:34.028592+0530 | WARNING | Telemetry failed for HOSP-PC-002: 404
+2025-09-28T21:29:39.137059+0530 | WARNING | Telemetry failed for HOSP-PC-003: 404
+2025-09-28T21:29:44.224288+0530 | WARNING | Telemetry failed for HOSP-PC-004: 404
+2025-09-28T21:29:49.306114+0530 | WARNING | Telemetry failed for HOSP-PC-005: 404
+2025-09-28T21:29:54.392767+0530 | WARNING | Telemetry failed for HOSP-PC-006: 404
+2025-09-28T21:29:59.471278+0530 | WARNING | Telemetry failed for HOSP-PC-007: 404
+2025-09-28T21:30:04.563007+0530 | WARNING | Telemetry failed for HOSP-PC-008: 404
+2025-09-28T21:30:09.668511+0530 | WARNING | Telemetry failed for HOSP-PC-009: 404
+2025-09-28T21:30:14.755847+0530 | WARNING | Telemetry failed for HOSP-PC-010: 404
+2025-09-28T21:30:19.831825+0530 | WARNING | Telemetry failed for HOSP-PC-011: 404
+2025-09-28T21:30:24.906893+0530 | WARNING | Telemetry failed for HOSP-PC-012: 404
+2025-09-28T21:30:29.982812+0530 | WARNING | Telemetry failed for HOSP-PC-013: 404
+2025-09-28T21:30:35.059744+0530 | WARNING | Telemetry failed for HOSP-PC-014: 404
+2025-09-28T21:30:40.179539+0530 | WARNING | Telemetry failed for HOSP-PC-015: 404
+2025-09-28T21:30:45.266084+0530 | WARNING | Telemetry failed for HOSP-LAP-001: 404
+2025-09-28T21:30:50.365271+0530 | WARNING | Telemetry failed for HOSP-LAP-002: 404
+2025-09-28T21:30:55.453650+0530 | WARNING | Telemetry failed for HOSP-LAP-003: 404
+2025-09-28T21:31:00.557751+0530 | WARNING | Telemetry failed for HOSP-LAP-004: 404
+2025-09-28T21:31:05.635122+0530 | WARNING | Telemetry failed for HOSP-LAP-005: 404
+2025-09-28T21:31:10.728768+0530 | WARNING | Telemetry failed for HOSP-LAP-006: 404
+2025-09-28T21:31:15.820746+0530 | WARNING | Telemetry failed for HOSP-LAP-007: 404
+2025-09-28T21:31:20.930513+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-001: 404
+2025-09-28T21:31:26.019798+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-002: 404
+2025-09-28T21:31:31.091568+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-003: 404
+2025-09-28T21:31:36.173312+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-004: 404
+2025-09-28T21:31:41.281490+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-005: 404
+2025-09-28T21:31:46.383159+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-001: 404
+2025-09-28T21:31:51.502964+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-002: 404
+2025-09-28T21:31:56.552114+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-001: 404
+2025-09-28T21:32:01.631781+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-002: 404
+2025-09-28T21:32:06.739458+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-003: 404
+2025-09-28T21:32:11.806631+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-004: 404
+2025-09-28T21:32:16.874974+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-005: 404
+2025-09-28T21:32:21.956922+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-006: 404
+2025-09-28T21:32:27.055492+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-001: 404
+2025-09-28T21:32:32.188693+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-002: 404
+2025-09-28T21:32:37.270577+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-003: 404
+2025-09-28T21:32:42.353566+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-004: 404
+2025-09-28T21:32:47.426195+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-005: 404
+2025-09-28T21:32:52.526318+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-006: 404
+2025-09-28T21:32:57.649990+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-007: 404
+2025-09-28T21:33:02.734464+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-001: 404
+2025-09-28T21:33:07.812797+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-002: 404
+2025-09-28T21:33:12.890334+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-003: 404
+2025-09-28T21:33:17.991125+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-004: 404
+2025-09-28T21:33:23.088700+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-005: 404
+2025-09-28T21:33:28.166702+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-006: 404
+2025-09-28T21:33:33.264812+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-007: 404
+2025-09-28T21:33:38.348431+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-008: 404
+2025-09-28T21:33:43.426093+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-001: 404
+2025-09-28T21:33:48.517839+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-002: 404
+2025-09-28T21:33:53.620406+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-003: 404
+2025-09-28T21:33:58.724599+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-004: 404
+2025-09-28T21:34:03.813586+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-005: 404
+2025-09-28T21:34:08.915838+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-006: 404
+2025-09-28T21:34:14.008003+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-007: 404
+2025-09-28T21:34:19.077937+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-008: 404
+2025-09-28T21:34:24.172427+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-001: 404
+2025-09-28T21:34:29.277105+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-002: 404
+2025-09-28T21:34:34.377798+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-003: 404
+2025-09-28T21:34:39.468107+0530 | WARNING | Telemetry failed for IOT-ULTRASOUND-004: 404
+2025-09-28T21:34:44.576113+0530 | WARNING | Telemetry failed for IOT-BLOODANALYZER-001: 404
+2025-09-28T21:34:49.678291+0530 | WARNING | Telemetry failed for IOT-BLOODANALYZER-002: 404
+2025-09-28T21:34:54.760420+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-001: 404
+2025-09-28T21:34:59.828387+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-002: 404
+2025-09-28T21:35:04.915350+0530 | WARNING | Telemetry failed for IOT-DRUGDISPENSER-003: 404
+2025-09-28T21:35:10.007572+0530 | WARNING | Telemetry failed for INFRA-FIREWALL-001: 404
+2025-09-28T21:35:15.126041+0530 | WARNING | Telemetry failed for INFRA-CORESWITCH-001: 404
+2025-09-28T21:35:20.216844+0530 | WARNING | Telemetry failed for INFRA-WIFICONTROLLER-001: 404
+2025-09-28T21:35:25.296878+0530 | WARNING | Telemetry failed for INFRA-DHCPSERVER-001: 404
+2025-09-28T21:35:30.397319+0530 | WARNING | Telemetry failed for INFRA-DNSSERVER-001: 404
+2025-09-28T21:35:35.520510+0530 | WARNING | Telemetry failed for INFRA-DOMAINCONTROLLER-001: 404
+2025-09-28T21:36:10.612846+0530 | WARNING | Telemetry failed for HOSP-PC-001: 404
+2025-09-28T21:36:15.680817+0530 | WARNING | Telemetry failed for HOSP-PC-002: 404
+2025-09-28T21:36:20.765683+0530 | WARNING | Telemetry failed for HOSP-PC-003: 404
+2025-09-28T21:36:25.867704+0530 | WARNING | Telemetry failed for HOSP-PC-004: 404
+2025-09-28T21:36:30.965258+0530 | WARNING | Telemetry failed for HOSP-PC-005: 404
+2025-09-28T21:36:36.051118+0530 | WARNING | Telemetry failed for HOSP-PC-006: 404
+2025-09-28T21:36:41.127163+0530 | WARNING | Telemetry failed for HOSP-PC-007: 404
+2025-09-28T21:36:46.201600+0530 | WARNING | Telemetry failed for HOSP-PC-008: 404
+2025-09-28T21:45:30.506094+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T21:45:30.506569+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T21:45:32.862820+0530 | INFO | Admin authentication successful
+2025-09-28T21:45:32.872884+0530 | INFO | Generated 30 realistic users
+2025-09-28T21:45:32.875124+0530 | INFO | Generated 73 realistic devices
+2025-09-28T21:45:32.875646+0530 | INFO | Created 5 security scenarios
+2025-09-28T21:45:34.933675+0530 | WARNING | Failed to register user dr.cardiology: {'detail': 'Username already registered'}
+2025-09-28T21:45:35.064909+0530 | WARNING | Failed to register user nurse.supervisor: {'detail': 'Username already registered'}
+2025-09-28T21:45:35.186028+0530 | WARNING | Failed to register user it.admin: {'detail': 'Username already registered'}
+2025-09-28T21:45:35.315292+0530 | WARNING | Failed to register user security.chief: {'detail': 'Username already registered'}
+2025-09-28T21:45:35.444441+0530 | WARNING | Failed to register user pharmacy.head: {'detail': 'Username already registered'}
+2025-09-28T21:45:41.795172+0530 | INFO | Registered 25/30 users
+2025-09-28T21:45:41.945451+0530 | ERROR | Error registering device HOSP-PC-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:44.054473+0530 | ERROR | Error registering device HOSP-PC-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:46.154818+0530 | ERROR | Error registering device HOSP-PC-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:48.221788+0530 | ERROR | Error registering device HOSP-PC-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:50.336108+0530 | ERROR | Error registering device HOSP-PC-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:52.424918+0530 | ERROR | Error registering device HOSP-PC-006: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:54.528240+0530 | ERROR | Error registering device HOSP-PC-007: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:56.611721+0530 | ERROR | Error registering device HOSP-PC-008: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:45:58.708505+0530 | ERROR | Error registering device HOSP-PC-009: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:00.809445+0530 | ERROR | Error registering device HOSP-PC-010: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:02.907332+0530 | ERROR | Error registering device HOSP-PC-011: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:05.011587+0530 | ERROR | Error registering device HOSP-PC-012: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:07.111389+0530 | ERROR | Error registering device HOSP-PC-013: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:09.211295+0530 | ERROR | Error registering device HOSP-PC-014: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:11.340244+0530 | ERROR | Error registering device HOSP-PC-015: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:13.416492+0530 | ERROR | Error registering device HOSP-LAP-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:15.534903+0530 | ERROR | Error registering device HOSP-LAP-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:17.642124+0530 | ERROR | Error registering device HOSP-LAP-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:19.753532+0530 | ERROR | Error registering device HOSP-LAP-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:21.861325+0530 | ERROR | Error registering device HOSP-LAP-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:23.989044+0530 | ERROR | Error registering device HOSP-LAP-006: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:26.103750+0530 | ERROR | Error registering device HOSP-LAP-007: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:28.200038+0530 | ERROR | Error registering device IOT-PATIENTMONITOR-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:30.263588+0530 | ERROR | Error registering device IOT-PATIENTMONITOR-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:32.316650+0530 | ERROR | Error registering device IOT-INFUSIONPUMP-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:34.411152+0530 | ERROR | Error registering device IOT-INFUSIONPUMP-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:36.683699+0530 | ERROR | Error registering device IOT-VENTILATOR-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:38.754070+0530 | ERROR | Error registering device IOT-VENTILATOR-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:40.862111+0530 | ERROR | Error registering device IOT-VENTILATOR-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:42.949185+0530 | ERROR | Error registering device IOT-VENTILATOR-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:45.161188+0530 | ERROR | Error registering device IOT-VENTILATOR-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:47.302448+0530 | ERROR | Error registering device IOT-VENTILATOR-006: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:49.671414+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:51.807847+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:53.958943+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:56.061752+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:46:58.221983+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:00.320436+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-006: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:02.424674+0530 | ERROR | Error registering device IOT-X-RAYMACHINE-007: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:04.753894+0530 | ERROR | Error registering device IOT-MRISCANNER-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:06.906673+0530 | ERROR | Error registering device IOT-MRISCANNER-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:09.011777+0530 | ERROR | Error registering device IOT-MRISCANNER-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:11.112983+0530 | ERROR | Error registering device IOT-MRISCANNER-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:13.237862+0530 | ERROR | Error registering device IOT-MRISCANNER-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:15.327648+0530 | ERROR | Error registering device IOT-CTSCANNER-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:17.462884+0530 | ERROR | Error registering device IOT-CTSCANNER-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:19.593931+0530 | ERROR | Error registering device IOT-CTSCANNER-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:21.667891+0530 | ERROR | Error registering device IOT-CTSCANNER-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:23.800919+0530 | ERROR | Error registering device IOT-CTSCANNER-005: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:25.899041+0530 | ERROR | Error registering device IOT-CTSCANNER-006: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:28.001183+0530 | ERROR | Error registering device IOT-CTSCANNER-007: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:30.103274+0530 | ERROR | Error registering device IOT-ULTRASOUND-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:32.227588+0530 | ERROR | Error registering device IOT-ULTRASOUND-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:34.391107+0530 | ERROR | Error registering device IOT-ULTRASOUND-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:36.512963+0530 | ERROR | Error registering device IOT-ULTRASOUND-004: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:38.818045+0530 | ERROR | Error registering device IOT-BLOODANALYZER-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:40.955983+0530 | ERROR | Error registering device IOT-BLOODANALYZER-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:43.348724+0530 | ERROR | Error registering device IOT-DRUGDISPENSER-001: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:45.414367+0530 | ERROR | Error registering device IOT-DRUGDISPENSER-002: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:47.493074+0530 | ERROR | Error registering device IOT-DRUGDISPENSER-003: Expecting value: line 1 column 1 (char 0)
+2025-09-28T21:47:49.697754+0530 | WARNING | Failed to register device INFRA-FIREWALL-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:49.827385+0530 | WARNING | Failed to register device INFRA-CORESWITCH-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:49.959086+0530 | WARNING | Failed to register device INFRA-WIFICONTROLLER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'network_device', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:50.104817+0530 | WARNING | Failed to register device INFRA-DHCPSERVER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:50.251300+0530 | WARNING | Failed to register device INFRA-DNSSERVER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:50.405650+0530 | WARNING | Failed to register device INFRA-DOMAINCONTROLLER-001: {'detail': [{'type': 'enum', 'loc': ['body', 'device_type'], 'msg': "Input should be 'hospital_computer', 'hospital_laptop' or 'iot_device'", 'input': 'server', 'ctx': {'expected': "'hospital_computer', 'hospital_laptop' or 'iot_device'"}}]}
+2025-09-28T21:47:50.517826+0530 | INFO | Registered 7/73 devices
+2025-09-28T21:47:50.525685+0530 | INFO | Continuous telemetry started
+2025-09-28T21:47:50.527242+0530 | INFO | ✅ Full simulation environment initialized and running
+2025-09-28T21:47:50.531286+0530 | INFO | Starting security scenario: Network Intrusion Attempt
+2025-09-28T21:47:50.535176+0530 | ERROR | Failed to create security event: {'detail': 'Not Found'}
+2025-09-28T21:47:52.563521+0530 | WARNING | Telemetry failed for HOSP-PC-001: 404
+2025-09-28T21:47:57.653982+0530 | WARNING | Telemetry failed for HOSP-PC-002: 404
+2025-09-28T21:48:02.723438+0530 | WARNING | Telemetry failed for HOSP-PC-003: 404
+2025-09-28T21:48:07.794776+0530 | WARNING | Telemetry failed for HOSP-PC-004: 404
+2025-09-28T21:48:12.880955+0530 | WARNING | Telemetry failed for HOSP-PC-005: 404
+2025-09-28T21:48:17.961390+0530 | WARNING | Telemetry failed for HOSP-PC-006: 404
+2025-09-28T21:48:23.053279+0530 | WARNING | Telemetry failed for HOSP-PC-007: 404
+2025-09-28T21:48:28.126855+0530 | WARNING | Telemetry failed for HOSP-PC-008: 404
+2025-09-28T21:48:33.237604+0530 | WARNING | Telemetry failed for HOSP-PC-009: 404
+2025-09-28T21:48:38.328205+0530 | WARNING | Telemetry failed for HOSP-PC-010: 404
+2025-09-28T21:48:43.440039+0530 | WARNING | Telemetry failed for HOSP-PC-011: 404
+2025-09-28T21:48:48.537977+0530 | WARNING | Telemetry failed for HOSP-PC-012: 404
+2025-09-28T21:48:50.578631+0530 | ERROR | Failed to create security event: {'detail': 'Not Found'}
+2025-09-28T21:48:53.631658+0530 | WARNING | Telemetry failed for HOSP-PC-013: 404
+2025-09-28T21:48:58.730392+0530 | WARNING | Telemetry failed for HOSP-PC-014: 404
+2025-09-28T21:49:03.836705+0530 | WARNING | Telemetry failed for HOSP-PC-015: 404
+2025-09-28T21:49:08.940793+0530 | WARNING | Telemetry failed for HOSP-LAP-001: 404
+2025-09-28T21:49:14.033873+0530 | WARNING | Telemetry failed for HOSP-LAP-002: 404
+2025-09-28T21:49:19.141573+0530 | WARNING | Telemetry failed for HOSP-LAP-003: 404
+2025-09-28T21:49:24.238703+0530 | WARNING | Telemetry failed for HOSP-LAP-004: 404
+2025-09-28T21:49:29.329116+0530 | WARNING | Telemetry failed for HOSP-LAP-005: 404
+2025-09-28T21:49:34.382570+0530 | WARNING | Telemetry failed for HOSP-LAP-006: 404
+2025-09-28T21:49:39.463456+0530 | WARNING | Telemetry failed for HOSP-LAP-007: 404
+2025-09-28T21:49:44.555018+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-001: 404
+2025-09-28T21:49:49.666619+0530 | WARNING | Telemetry failed for IOT-PATIENTMONITOR-002: 404
+2025-09-28T21:49:54.758095+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-001: 404
+2025-09-28T21:49:59.900500+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-002: 404
+2025-09-28T21:50:04.980090+0530 | WARNING | Telemetry failed for IOT-INFUSIONPUMP-003: 404
+2025-09-28T21:50:10.066207+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-001: 404
+2025-09-28T21:50:15.144410+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-002: 404
+2025-09-28T21:50:20.238516+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-003: 404
+2025-09-28T21:50:20.585886+0530 | INFO | Security scenario completed: Network Intrusion Attempt
+2025-09-28T21:50:25.344424+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-004: 404
+2025-09-28T21:50:30.446244+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-005: 404
+2025-09-28T21:50:35.543152+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-006: 404
+2025-09-28T21:50:40.614779+0530 | WARNING | Telemetry failed for IOT-VENTILATOR-007: 404
+2025-09-28T21:50:45.683281+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-001: 404
+2025-09-28T21:50:50.768902+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-002: 404
+2025-09-28T21:50:55.864058+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-003: 404
+2025-09-28T21:51:00.997099+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-004: 404
+2025-09-28T21:51:06.181392+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-005: 404
+2025-09-28T21:51:11.269519+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-006: 404
+2025-09-28T21:51:16.387211+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-007: 404
+2025-09-28T21:51:21.456678+0530 | WARNING | Telemetry failed for IOT-X-RAYMACHINE-008: 404
+2025-09-28T21:51:26.574691+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-001: 404
+2025-09-28T21:51:31.675473+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-002: 404
+2025-09-28T21:51:36.810111+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-003: 404
+2025-09-28T21:51:41.926189+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-004: 404
+2025-09-28T21:51:47.029152+0530 | WARNING | Telemetry failed for IOT-MRISCANNER-005: 404
+2025-09-28T21:51:52.107872+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-001: 404
+2025-09-28T21:51:57.231853+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-002: 404
+2025-09-28T21:52:02.315971+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-003: 404
+2025-09-28T21:52:07.393739+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-004: 404
+2025-09-28T21:52:12.469104+0530 | WARNING | Telemetry failed for IOT-CTSCANNER-005: 404
+2025-09-28T22:05:06.350191+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T22:05:06.350838+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T22:05:08.569714+0530 | INFO | Admin authentication successful
+2025-09-28T22:05:08.575151+0530 | INFO | Generated 30 realistic users
+2025-09-28T22:05:08.576913+0530 | INFO | Generated 72 realistic devices
+2025-09-28T22:05:08.577425+0530 | INFO | Created 5 security scenarios
+2025-09-28T22:05:10.646486+0530 | WARNING | Failed to register user dr.cardiology: {'detail': 'Username already registered'}
+2025-09-28T22:05:10.774118+0530 | WARNING | Failed to register user nurse.supervisor: {'detail': 'Username already registered'}
+2025-09-28T22:05:10.900179+0530 | WARNING | Failed to register user it.admin: {'detail': 'Username already registered'}
+2025-09-28T22:05:11.029044+0530 | WARNING | Failed to register user security.chief: {'detail': 'Username already registered'}
+2025-09-28T22:05:11.156803+0530 | WARNING | Failed to register user pharmacy.head: {'detail': 'Username already registered'}
+2025-09-28T22:05:17.534528+0530 | INFO | Registered 25/30 users
+2025-09-28T22:05:17.615690+0530 | WARNING | Failed to register device HOSP-PC-001: HTTP 500 - Internal Server Error
+2025-09-28T22:05:19.847413+0530 | WARNING | Failed to register device HOSP-PC-002: HTTP 500 - Internal Server Error
+2025-09-28T22:05:22.036243+0530 | WARNING | Failed to register device HOSP-PC-003: HTTP 500 - Internal Server Error
+2025-09-28T22:05:24.251598+0530 | WARNING | Failed to register device HOSP-PC-004: HTTP 500 - Internal Server Error
+2025-09-28T22:05:26.465396+0530 | WARNING | Failed to register device HOSP-PC-005: HTTP 500 - Internal Server Error
+2025-09-28T22:05:28.679924+0530 | WARNING | Failed to register device HOSP-PC-006: HTTP 500 - Internal Server Error
+2025-09-28T22:05:30.911560+0530 | WARNING | Failed to register device HOSP-PC-007: HTTP 500 - Internal Server Error
+2025-09-28T22:05:33.135410+0530 | WARNING | Failed to register device HOSP-PC-008: HTTP 500 - Internal Server Error
+2025-09-28T22:05:35.338961+0530 | WARNING | Failed to register device HOSP-PC-009: HTTP 500 - Internal Server Error
+2025-09-28T22:05:37.564184+0530 | WARNING | Failed to register device HOSP-PC-010: HTTP 500 - Internal Server Error
+2025-09-28T22:05:39.793911+0530 | WARNING | Failed to register device HOSP-PC-011: HTTP 500 - Internal Server Error
+2025-09-28T22:05:42.014215+0530 | WARNING | Failed to register device HOSP-PC-012: HTTP 500 - Internal Server Error
+2025-09-28T22:05:44.234081+0530 | WARNING | Failed to register device HOSP-PC-013: HTTP 500 - Internal Server Error
+2025-09-28T22:05:46.459816+0530 | WARNING | Failed to register device HOSP-PC-014: HTTP 500 - Internal Server Error
+2025-09-28T22:05:48.686004+0530 | WARNING | Failed to register device HOSP-PC-015: HTTP 500 - Internal Server Error
+2025-09-28T22:05:50.857402+0530 | WARNING | Failed to register device HOSP-LAP-001: HTTP 500 - Internal Server Error
+2025-09-28T22:05:53.095770+0530 | WARNING | Failed to register device HOSP-LAP-002: HTTP 500 - Internal Server Error
+2025-09-28T22:05:55.278201+0530 | WARNING | Failed to register device HOSP-LAP-003: HTTP 500 - Internal Server Error
+2025-09-28T22:05:57.450717+0530 | WARNING | Failed to register device HOSP-LAP-004: HTTP 500 - Internal Server Error
+2025-09-28T22:05:59.663155+0530 | WARNING | Failed to register device HOSP-LAP-005: HTTP 500 - Internal Server Error
+2025-09-28T22:06:01.885091+0530 | WARNING | Failed to register device HOSP-LAP-006: HTTP 500 - Internal Server Error
+2025-09-28T22:07:43.795817+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T22:07:43.796358+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T22:07:46.009922+0530 | INFO | Admin authentication successful
+2025-09-28T22:07:46.018637+0530 | INFO | Generated 30 realistic users
+2025-09-28T22:07:46.021699+0530 | INFO | Generated 72 realistic devices
+2025-09-28T22:07:46.022312+0530 | INFO | Created 5 security scenarios
+2025-09-28T22:07:48.072035+0530 | WARNING | Failed to register user dr.cardiology: {'detail': 'Username already registered'}
+2025-09-28T22:07:48.192882+0530 | WARNING | Failed to register user nurse.supervisor: {'detail': 'Username already registered'}
+2025-09-28T22:07:48.310467+0530 | WARNING | Failed to register user it.admin: {'detail': 'Username already registered'}
+2025-09-28T22:07:48.438715+0530 | WARNING | Failed to register user security.chief: {'detail': 'Username already registered'}
+2025-09-28T22:07:48.556498+0530 | WARNING | Failed to register user pharmacy.head: {'detail': 'Username already registered'}
+2025-09-28T22:07:55.113132+0530 | INFO | Registered 25/30 users
+2025-09-28T22:08:06.015197+0530 | INFO | Registered 72/72 devices
+2025-09-28T22:08:06.018543+0530 | ERROR | Telemetry worker error: type object 'datetime.datetime' has no attribute 'UTC'
+2025-09-28T22:08:06.019019+0530 | INFO | Continuous telemetry started
+2025-09-28T22:08:06.021513+0530 | INFO | ✅ Full simulation environment initialized and running
+2025-09-28T22:08:06.023972+0530 | ERROR | Simulation error: type object 'datetime.datetime' has no attribute 'UTC'
+2025-09-28T22:08:06.025475+0530 | INFO | Simulation stopped
+2025-09-28T22:09:27.352369+0530 | INFO | Zero Trust Simulation Manager initialized
+2025-09-28T22:09:27.352893+0530 | INFO | 🚀 Starting Zero Trust Architecture Full Simulation
+2025-09-28T22:09:29.509616+0530 | INFO | Admin authentication successful
+2025-09-28T22:09:29.516381+0530 | INFO | Generated 30 realistic users
+2025-09-28T22:09:29.518213+0530 | INFO | Generated 71 realistic devices
+2025-09-28T22:09:29.518766+0530 | INFO | Created 5 security scenarios
+2025-09-28T22:09:31.568496+0530 | WARNING | Failed to register user dr.cardiology: {'detail': 'Username already registered'}
+2025-09-28T22:09:31.704476+0530 | WARNING | Failed to register user nurse.supervisor: {'detail': 'Username already registered'}
+2025-09-28T22:09:31.835571+0530 | WARNING | Failed to register user it.admin: {'detail': 'Username already registered'}
+2025-09-28T22:09:31.956179+0530 | WARNING | Failed to register user security.chief: {'detail': 'Username already registered'}
+2025-09-28T22:09:32.084644+0530 | WARNING | Failed to register user pharmacy.head: {'detail': 'Username already registered'}
+2025-09-28T22:09:39.173549+0530 | INFO | Registered 25/30 users
+2025-09-28T22:09:50.025112+0530 | INFO | Registered 71/71 devices
+2025-09-28T22:09:50.029725+0530 | INFO | Continuous telemetry started
+2025-09-28T22:09:50.034134+0530 | INFO | ✅ Full simulation environment initialized and running
+2025-09-28T22:09:50.036966+0530 | INFO | Starting security scenario: Ransomware Attack Simulation
+2025-09-28T22:09:50.082504+0530 | INFO | Security event created: malware_detection
+2025-09-28T22:11:24.160642+0530 | INFO | Security event created: unusual_file_activity

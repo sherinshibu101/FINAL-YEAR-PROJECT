@@ -1,0 +1,22 @@
+2025-09-27T13:05:49.018806+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-09-27T13:05:53.109350+0530 | ERROR | Demo failed: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001762C40FF80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-09-27T13:06:49.931045+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T14:44:48.992746+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T14:44:51.045681+0530 | ERROR | Demo failed: 'services'
+2025-10-04T14:58:03.378906+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T14:58:03.395147+0530 | ERROR | Demo failed: 'services'
+2025-10-04T15:00:29.196751+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T15:00:31.152189+0530 | ERROR | Demo failed: 'event_type'
+2025-10-04T15:02:56.366366+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T15:03:10.517093+0530 | ERROR | Demo failed: 'trust_score'
+2025-10-04T15:04:24.167916+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T15:19:51.860643+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T15:29:22.571315+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T15:57:26.894207+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T16:13:23.195456+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T16:23:27.180181+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T16:26:33.981021+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T16:31:19.483797+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T16:41:07.984624+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T18:50:53.740947+0530 | INFO | Zero Trust Architecture Demo initialized
+2025-10-04T18:53:26.886047+0530 | INFO | Zero Trust Architecture Demo initialized
