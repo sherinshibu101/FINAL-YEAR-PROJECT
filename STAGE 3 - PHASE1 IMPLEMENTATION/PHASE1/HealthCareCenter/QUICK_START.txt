@@ -1,0 +1,110 @@
+# Quick Start Guide - Hospital Management Portal
+
+## ⚡ 30-Second Setup
+
+### Terminal 1: Start Backend
+```bash
+cd Hospital-Backend
+npm start
+```
+✓ Listen for: "Hospital Backend listening on http://localhost:3000"
+
+### Terminal 2: Start IAM Server
+```bash
+cd Hospital-Frontend/server
+node index.js
+```
+✓ Listen for: "Backend listening on http://localhost:4000"
+
+### Terminal 3: Start Frontend
+```bash
+cd Hospital-Frontend
+npm run dev
+```
+✓ Listen for: "VITE v5.4.21 ready in ... Local: http://localhost:5173"
+
+## 🔓 Login Credentials
+
+| Email | Password |
+|-------|----------|
+| admin@hospital.com | Admin@123 |
+| doctor@hospital.com | Doctor@123 |
+| nurse@hospital.com | Nurse@123 |
+| receptionist@hospital.com | Reception@123 |
+
+## 📍 URLs
+
+- **Portal**: http://localhost:5173
+- **API**: http://localhost:3000
+- **Database UI**: http://localhost:8080 (User: hospital / Pass: F1UFDk8H36Ry2RITAvnErulW)
+
+## 🧪 Run Tests
+
+```bash
+# Full system test (all 16 tests)
+cd HealthCareCenter
+node test_comprehensive.js
+
+# Individual test
+node test_patient_crud.js
+node debug_update.js
+```
+
+## ✅ Features Checklist
+
+- [x] Patient CRUD (Create, Read, Update, Delete)
+- [x] Appointment CRUD (Create, Read, Update, Delete)
+- [x] JWT Authentication
+- [x] Role-based Access Control
+- [x] Database Persistence (PostgreSQL)
+- [x] Rate Limiting
+- [x] Error Handling
+- [x] Admin Panel with Patient/Appointment Management
+- [x] Responsive UI
+- [x] Security Headers & CORS Protection
+
+## 🎯 Try It Out
+
+1. **Login**: Use admin@hospital.com / Admin@123
+2. **Add Patient**: Click "Add Patient" → Fill form → Save
+3. **View Patient**: Click "View" on any patient
+4. **Edit Patient**: Click "Edit" → Update fields → Save
+5. **Delete Patient**: Click "Delete" with confirmation
+6. **Schedule Appointment**: Click "Schedule New Appointment" → Fill form
+7. **Reschedule**: Click "Reschedule" on appointment
+8. **Cancel**: Click "Delete" on appointment
+
+## 🔧 Configuration Files
+
+- `Hospital-Backend/.env` - Database URL, JWT secret
+- `Hospital-Frontend/server/.env` - JWT secret, CORS origin
+- `Hospital-Frontend/server/users.json` - User credentials
+- `Hospital-Frontend/vite.config.js` - API proxy rules
+
+## 📊 Database Seed Data
+
+- 4 Users (admin, doctor, nurse, receptionist)
+- 4 Patients ready for testing
+- 4 Appointments pre-scheduled
+- Database auto-initializes on first run
+
+## 🐛 Troubleshooting
+
+**Q: "Port 3000 already in use"**
+A: Kill existing process: `Get-Process node | Stop-Process -Force`
+
+**Q: "Cannot connect to database"**
+A: Ensure Docker container is running: `docker ps`
+
+**Q: "Login fails with '404'"**
+A: Check IAM server is running on port 4000
+
+**Q: "CORS error"**
+A: Check `vite.config.js` proxy configuration
+
+**Q: "Rate limit exceeded"**
+A: Restart IAM server to reset rate limiter
+
+---
+
+**All systems operational! Portal is ready to use.**

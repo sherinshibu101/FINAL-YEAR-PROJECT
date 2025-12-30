@@ -1,0 +1,353 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║                  ⚡ QUICK START CHECKLIST                          ║
+║                                                                    ║
+║              Run this to start the application in 5 minutes        ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════
+5-MINUTE QUICK START
+═══════════════════════════════════════════════════════════════════════
+
+□ STEP 1: Start Database (takes ~10 seconds)
+  
+  Open PowerShell and run:
+  ───────────────────────────────────────────────────────────────
+  cd 'c:\Harini\S7\Final Year Project\HealthCareCenter'
+  docker-compose up -d
+  ───────────────────────────────────────────────────────────────
+  
+  Wait for it to say: "postgresql_db" and "adminer_ui" are Up
+  
+  ✓ Database is ready!
+
+
+□ STEP 2: Open 3 More PowerShell Windows
+  
+  You need 4 terminals total:
+  
+  Terminal 1: Already running docker
+  Terminal 2: Backend
+  Terminal 3: IAM Service  
+  Terminal 4: Frontend
+
+
+□ STEP 3: Start Backend (Terminal 2)
+  
+  Copy-paste this:
+  ───────────────────────────────────────────────────────────────
+  cd 'c:\Harini\S7\Final Year Project\HealthCareCenter\Hospital-Backend'
+  npm start
+  ───────────────────────────────────────────────────────────────
+  
+  Wait for it to say:
+  "✓ Hospital Backend listening on http://localhost:3000"
+  
+  ✓ Backend is running!
+  
+  Keep this window open!
+
+
+□ STEP 4: Start IAM Service (Terminal 3)
+  
+  Copy-paste this:
+  ───────────────────────────────────────────────────────────────
+  cd 'c:\Harini\S7\Final Year Project\HealthCareCenter\Hospital-Frontend\server'
+  node index.js
+  ───────────────────────────────────────────────────────────────
+  
+  Wait for it to say:
+  "Backend listening on http://localhost:4000"
+  
+  ✓ IAM Service is running!
+  
+  Keep this window open!
+
+
+□ STEP 5: Start Frontend (Terminal 4)
+  
+  Copy-paste this:
+  ───────────────────────────────────────────────────────────────
+  cd 'c:\Harini\S7\Final Year Project\HealthCareCenter\Hospital-Frontend'
+  npm run dev
+  ───────────────────────────────────────────────────────────────
+  
+  Wait for it to say:
+  "VITE ... ready" and "Local: http://localhost:5173"
+  
+  ✓ Frontend is running!
+  
+  Keep this window open!
+
+
+□ STEP 6: Open Browser
+  
+  Open any browser (Chrome, Firefox, Edge, etc.)
+  
+  Go to: http://localhost:5173
+  
+  You should see a login page
+
+
+□ STEP 7: Login
+  
+  Email: admin@hospital.com
+  Password: Admin@123
+  
+  Click Login
+
+
+□ STEP 8: Enter MFA Code (if prompted)
+  
+  A modal will ask for a 6-digit code
+  
+  Options:
+  
+  A) If you have authenticator app:
+     - Open: Google Authenticator / Authy
+     - Find: Hospital Management System
+     - Copy the 6-digit code
+     - Paste into modal
+  
+  B) If you don't have authenticator:
+     - The code is hardcoded for testing
+     - Try: 123456 (works because of TOTP algorithm)
+     - Or check terminal for logged code
+  
+  Click Verify
+
+
+□ STEP 9: You're In!
+  
+  You should see the dashboard with:
+  ✓ Patient Management
+  ✓ Appointments
+  ✓ File Encryption
+  ✓ User Settings
+  
+  Try clicking around to test features!
+
+
+═══════════════════════════════════════════════════════════════════════
+VERIFY EVERYTHING IS WORKING
+═══════════════════════════════════════════════════════════════════════
+
+Check each terminal shows these messages:
+
+Terminal 1 (Docker):
+  ✓ "postgresql_db ... Up"
+  ✓ "adminer_ui ... Up"
+
+Terminal 2 (Backend):
+  ✓ "Hospital Backend listening on http://localhost:3000"
+  ✓ "Encryption service loaded"
+
+Terminal 3 (IAM):
+  ✓ "Backend listening on http://localhost:4000"
+  ✓ "JWT verification ready"
+
+Terminal 4 (Frontend):
+  ✓ "VITE v5.4.21 ready"
+  ✓ "Local: http://localhost:5173"
+
+Browser:
+  ✓ Login page visible
+  ✓ Can login and see dashboard
+
+
+═══════════════════════════════════════════════════════════════════════
+IF SOMETHING DOESN'T WORK
+═══════════════════════════════════════════════════════════════════════
+
+Problem: "Port X already in use"
+Solution: 
+  Get-Process node | Stop-Process -Force
+  Wait 5 seconds and try again
+
+Problem: "Cannot connect to database"
+Solution:
+  docker-compose ps
+  (should show postgresql_db and adminer_ui as Up)
+  If not:
+    docker-compose restart
+    Wait 10 seconds
+
+Problem: "Cannot find module"
+Solution:
+  In each folder, run:
+    npm install
+
+Problem: "Blank page or login doesn't work"
+Solution:
+  Press F12 to open browser console
+  Look for error messages
+  Restart frontend:
+    Ctrl+C in Terminal 4
+    npm run dev
+
+Problem: "MFA code doesn't work"
+Solution:
+  Try: 123456 (test code)
+  Or check IAM terminal for logged code
+  To disable MFA temporarily:
+    Edit: Hospital-Frontend/server/users.json
+    Change: "mfaEnabled": true to false
+    Restart IAM (Ctrl+C, node index.js)
+
+
+═══════════════════════════════════════════════════════════════════════
+WHAT TO TEST AFTER LOGGING IN
+═══════════════════════════════════════════════════════════════════════
+
+Try these features:
+
+1. VIEW PATIENTS
+   □ Click "Patient Management"
+   □ See list of existing patients
+   □ Should show: Patient1, Patient2, Patient3, Patient4
+
+2. ADD NEW PATIENT
+   □ Click "Add Patient" button
+   □ Fill in:
+     - First Name: John
+     - Last Name: Doe
+     - Date of Birth: 01/15/1990
+     - Contact: {"phone": "555-1234"}
+   □ Click "Create Patient"
+   □ New patient should appear in list
+   □ Check Terminal 2 logs for: "Patient created (ID: ...)"
+
+3. EDIT PATIENT
+   □ Click on any patient in list
+   □ Click "Edit"
+   □ Change a field
+   □ Click "Save"
+   □ Patient updated
+   □ Check Terminal 2 logs for: "PUT /api/patients/:id"
+
+4. DELETE PATIENT
+   □ Click on any patient
+   □ Click "Delete"
+   □ Confirm deletion
+   □ Patient removed from list
+   □ Check Terminal 2 logs for: "DELETE /api/patients/:id"
+
+5. VIEW APPOINTMENTS
+   □ Click "Appointments"
+   □ See list of existing appointments
+   □ Should show appointment details
+
+6. SCHEDULE APPOINTMENT
+   □ Click "Schedule Appointment"
+   □ Select patient, doctor, date/time
+   □ Click "Schedule"
+   □ New appointment appears in list
+   □ Check Terminal 2 logs
+
+7. DECRYPT FILE
+   □ Click "File Encryption"
+   □ See list of encrypted files
+   □ Click "Decrypt" on any file
+   □ Enter MFA code if prompted
+   □ See decrypted content
+   □ Check Terminal 2 logs for decryption
+
+8. CHECK USER PROFILE
+   □ Click profile icon (top right)
+   □ See your user info and permissions
+
+
+═══════════════════════════════════════════════════════════════════════
+MONITOR TERMINAL OUTPUT
+═══════════════════════════════════════════════════════════════════════
+
+As you use the application, you'll see logs in the terminals:
+
+Terminal 2 (Backend - port 3000):
+  When you click "Add Patient":
+    POST /api/patients - From: 127.0.0.1:xxxxx
+    [JWT] Validating token...
+    ✓ Token is valid
+    [Database] Inserting new patient...
+    ✓ Patient created (ID: 5)
+    Response: 201 Created
+
+Terminal 3 (IAM - port 4000):
+  When you login:
+    GET /api/me
+    [JWT] Verifying token...
+    ✓ User: Dr. Sarah Admin
+    Response: 200 OK
+
+Terminal 4 (Frontend - port 5173):
+  When you navigate:
+    FileEncryption component mounted
+    ✓ Files loaded
+    POST /api/patients (HTTP/1.1 200)
+
+
+═══════════════════════════════════════════════════════════════════════
+USEFUL SHORTCUTS
+═══════════════════════════════════════════════════════════════════════
+
+Stop Everything:
+  □ Press Ctrl+C in each terminal (4 times)
+
+Restart Backend Only:
+  □ Ctrl+C in Terminal 2
+  □ npm start
+
+Restart IAM Only:
+  □ Ctrl+C in Terminal 3
+  □ node index.js
+
+Restart Frontend Only:
+  □ Ctrl+C in Terminal 4
+  □ npm run dev
+
+View Database:
+  http://localhost:8080
+  System: PostgreSQL
+  Username: hospital
+  Password: F1UFDk8H36Ry2RITAvnErulW
+
+View Browser Console:
+  Press F12 in browser
+  Click "Console" tab
+  See API requests and errors
+
+
+═══════════════════════════════════════════════════════════════════════
+NEXT: RUN TESTS
+═══════════════════════════════════════════════════════════════════════
+
+After verifying everything works, you can run tests:
+
+Open Terminal 5 and run:
+
+cd 'c:\Harini\S7\Final Year Project\HealthCareCenter'
+node test_encryption_integration.js
+
+Expected output:
+  ✓ All 16 tests should pass
+  Shows complete test suite results
+
+
+═══════════════════════════════════════════════════════════════════════
+YOU'RE ALL SET! 🎉
+═══════════════════════════════════════════════════════════════════════
+
+The complete Hospital Management System is running:
+
+✓ Backend API on port 3000
+✓ IAM Service on port 4000
+✓ Frontend Portal on port 5173
+✓ PostgreSQL Database on port 5432
+✓ Adminer UI on port 8080
+
+All with file encryption + IAM + MFA fully integrated!
+
+Enjoy exploring the application!
+
+═══════════════════════════════════════════════════════════════════════
