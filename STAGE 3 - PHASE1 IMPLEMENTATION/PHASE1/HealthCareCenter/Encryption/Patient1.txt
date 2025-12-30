@@ -1,4 +1,0 @@
-Patient Name: John Doe
-Age: 35
-Diagnosis: Hypertension
-Medication: Amlodipine
