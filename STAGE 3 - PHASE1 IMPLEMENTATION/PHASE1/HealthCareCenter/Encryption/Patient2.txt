@@ -1,4 +1,0 @@
-Patient Name: HARINI
-Age: 35
-Diagnosis: Hypertension
-Medication: Amlodipine
