@@ -1,0 +1,77 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+!.env.sample
+*.secret
+
+# Certificates and keys
+certs/
+Encryption/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+id_rsa
+id_rsa.pub
+
+# Node / JavaScript
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+vite.svg
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.python-version
+
+# Data and artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# ML / generated assets
+ml-engine/data/
+ml-engine/models/
+*.pkl
+*.joblib
+*.onnx
+
+# IDE / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Git / tool caches
+.agents/
+.codex/
+
