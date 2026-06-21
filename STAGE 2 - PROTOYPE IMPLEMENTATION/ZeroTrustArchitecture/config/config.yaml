@@ -1,0 +1,82 @@
+# Zero Trust Architecture Configuration
+
+# Database Configuration
+database:
+  url: "sqlite:///./data/zerotrust.db"
+  echo: false
+
+# Redis Configuration
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+
+# API Configuration
+api:
+  host: "localhost"
+  port: 8001
+  debug: true
+  secret_key: "your-secret-key-change-in-production"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+
+# Identity & Access Management
+identity:
+  mfa_required: true
+  session_timeout: 1800  # 30 minutes
+  max_failed_attempts: 3
+  lockout_duration: 900  # 15 minutes
+
+# Endpoint Monitoring
+endpoint_monitoring:
+  collection_interval: 60  # seconds
+  agent_heartbeat: 30  # seconds
+  supported_devices:
+    - "hospital_computer"
+    - "hospital_laptop" 
+    - "iot_device"
+
+# Threat Detection
+threat_detection:
+  ml_model_path: "./data/threat_model.pkl"
+  confidence_threshold: 0.7
+  anomaly_threshold: 2.0
+  threat_feeds:
+    - "https://api.threatintel.example.com"
+
+# Response System
+response:
+  auto_response_enabled: true
+  escalation_threshold: 0.9
+  quarantine_duration: 3600  # 1 hour
+  notification_channels:
+    - "email"
+    - "sms"
+    - "slack"
+
+# Network Security
+network:
+  microsegmentation: true
+  proxy_enabled: true
+  allowed_ports: [80, 443, 22, 3389]
+  blocked_countries: ["CN", "RU", "KP"]
+
+# Logging
+logging:
+  level: "INFO"
+  format: "json"
+  file_path: "./logs/zerotrust.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Monitoring
+monitoring:
+  prometheus_port: 9090
+  grafana_port: 3000
+  elasticsearch_url: "http://localhost:9200"
+
+# Encryption
+encryption:
+  algorithm: "AES-256-GCM"
+  key_rotation_days: 90
+  backup_encryption: true

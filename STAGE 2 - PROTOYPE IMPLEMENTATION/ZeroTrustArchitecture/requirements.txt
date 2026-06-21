@@ -1,0 +1,23 @@
+# SecureHealthCare: Zero Trust Architecture - Essential Dependencies
+
+# Core FastAPI Framework
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.0
+python-multipart>=0.0.5
+
+# Logging
+loguru>=0.6.0
+
+# HTTP Requests
+requests>=2.28.0
+
+# Async Support
+asyncio
