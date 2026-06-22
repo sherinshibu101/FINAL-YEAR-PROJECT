@@ -3,13 +3,6 @@
 A production oriented hospital management platform with a backend, frontend, API gateway,
 internal services, monitoring, and ML components.
 
----
-
-> Keep credentials out of the repository. Use environment variables, local config files,
-> or deployment secrets for all sensitive values.
-
----
-
 ## Features
 
 ### Core Platform
