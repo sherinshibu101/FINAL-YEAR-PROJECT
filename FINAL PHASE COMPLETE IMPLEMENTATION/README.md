@@ -65,9 +65,4 @@ shared/                      Shared utilities and code
 spa-controller/              SPA controller service
 ```
 
-## Security
-
-- Do not commit `.env` files, certificates, private keys, or database dumps.
-- Keep `certs/` and `Encryption/` under review before publishing.
-- Exclude `node_modules/`, build output, logs, and generated artifacts from GitHub.
 
